@@ -1,6 +1,10 @@
 # AlphaLink Installation Guide
 
 This guide provides step-by-step instructions for installing AlphaLink, including setting up the necessary Miniconda environment and preparing the OpenFold environment.
+## Step 0: Switch to the new software stack on Euler 
+```bash
+    env2lmod    
+```
 
 ## Step 1: Install Miniconda
 
