@@ -1,10 +1,6 @@
 # AlphaLink Installation Guide
 
 This guide provides step-by-step instructions for installing AlphaLink, including setting up the necessary Miniconda environment and preparing the OpenFold environment.
-## Step 0: Switch to the new software stack on Euler 
-```bash
-    env2lmod    
-```
 
 ## Step 1: Install Miniconda
 
@@ -42,36 +38,11 @@ This guide provides step-by-step instructions for installing AlphaLink, includin
     ```bash
     conda install conda-forge::mamba
     ```
-
-## Step 2: Prepare OpenFold Environment
-
-1. **Clone the OpenFold repository**:
-    ```bash
-    git clone https://github.com/aqlaboratory/openfold.git
-    ```
-
-2. **Change directory to OpenFold**:
-    ```bash
-    cd OpenFold
-    ```
-
-3. **Create the OpenFold environment using Mamba**:
-    ```bash
-    mamba env create -n openfold_env -f environment.yml
-    ```
-
-4. **Install third-party dependencies**:
-    ```bash
-    scripts/install_third_party_dependencies.sh
-    ```
-
-5. **Return to the home directory**:
-    ```bash
-    cd
-    ```
-
 ## Step 3: Clone AlphaLink
-
+0. **Move to scratch directory**:
+    ```bash
+    cd cluster/scratch/username
+    ```
 1. **Clone the AlphaLink repository**:
     ```bash
     git clone https://github.com/lhatsk/AlphaLink.git
@@ -98,7 +69,6 @@ This guide provides step-by-step instructions for installing AlphaLink, includin
     ```bash
     mkdir resources
     cd resources
-    mkdir Alphalink_params
     ```
 
 2. **Download the weights** (ensure you have enough space):
